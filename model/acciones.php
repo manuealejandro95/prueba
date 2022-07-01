@@ -34,7 +34,7 @@ class datos extends Conexion {
     public function validasesionmodel($datos){
         $conn= Conexion::getInstance()->Conectar();
         $clave = hash('md5',$datos["contrasena"]);
-        $query = "SELECT P.Nombres AS Nombrecompleto, 'cliente' AS Tipo FROM Personas P INNER JOIN Usuarios U ON P.Numeroident = U.Identificador WHERE P.Numeroident = '".$datos["usuario"]."' AND U.Pass = '".$clave."'";
+        $query = "SELECT P.Nombres AS Nombrecompleto, 'cliente' AS Tipo FROM Personas P INNER JOIN Usuarios U ON P.Numeroident = U.Identificador WHERE P.email = '".$datos["usuario"]."' AND U.Pass = '".$clave."'";
         $result = sqlsrv_query($conn, $query);
         
         if($result){
@@ -45,8 +45,8 @@ class datos extends Conexion {
                             'usuario' => $row['Nombrecompleto'],
                             'tipo' => $row['Tipo']
                         );
-                }                        
-                              
+                }
+                                
                 return $json;
         
                 sqlsrv_close($conn);

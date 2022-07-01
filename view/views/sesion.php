@@ -15,8 +15,8 @@
                 </div>                    
                 <div class="form-row justify-content-center">
                     <div class="form-group col-md-4">
-                        <label for="inputState">Correo electrónico</label>
-                        <input name="usua" type="email" class="form-control" id="usua">
+                        <label for="inputState">Numero de Documento</label>
+                        <input name="usua" type="text" class="form-control" id="usua">
                     </div>
                 </div>
                 <div class="form-row justify-content-center">

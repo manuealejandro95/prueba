@@ -15,10 +15,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <!--<li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active">
+        <a class="nav-link" href="inicio">Registrar</a>
       </li>
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item dropdown">
@@ -49,5 +49,7 @@
             <h2>Registros</h2>
         </div>
     </div>
-    
+    <div class="row" id="registros">
+    </div>
 </div>
+<script src="js/registros.js?v=<?php echo(rand()); ?>"></script>

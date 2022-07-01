@@ -3,5 +3,5 @@
 
     session_destroy();
 
-    header("location: /pruebalogin/sesion");
+    header("location: /prueba");
     exit();

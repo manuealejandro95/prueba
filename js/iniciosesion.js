@@ -16,17 +16,6 @@ function validacion(){
             });
             $("#usua").focus();  
             break;
-        case $("#usua").val().length === 0 || $("#usua").val().indexOf('@', 0) == -1 || $("#usua").val().indexOf('.', 0) == -1:
-            Swal.fire({
-                title: '<strong>Error</strong>',
-                icon: 'error',
-                html: '<p class="text-danger font-weight-bold">Dirección de email inválido.</p>',
-                showConfirmButton: false,
-                timer: 5500,
-                returnFocus: false
-            });
-            $('#usua').focus();
-            break;
         case $("#contrasena").val().length === 0:
             Swal.fire({
                 title: '<strong>Error</strong>',

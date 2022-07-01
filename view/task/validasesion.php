@@ -13,17 +13,18 @@
                     if(isset($array[0]['usuario'])){
                         session_start();
                         $_SESSION['username'] = $array[0]['usuario'];
-                        $url = "/pruebalogin/admin";
+                        $url = "/prueba/admin";
                         echo $url;
-                    }
-                    
+                    }else{
+                        echo "0";
+                    }                    
                 }else{
-                    return 3;
+                    echo "3";
                 }
         }
     }
 
     $data = new MvcSesion();
-    $data -> enviardata = array("usuario"=>ucwords(strtolower($_POST["usuario"])),
+    $data -> enviardata = array("usuario"=>$_POST["usuario"],
                                 "contrasena"=>$_POST["contrasena"]);
     $data -> SesionView();

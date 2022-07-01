@@ -3,7 +3,7 @@
     if (isset($_SESSION['username'])){
         $usuario= $_SESSION['username'];
     }else{
-        header("location: /pruebalogin/sesion");
+        header("location: /prueba/sesion");
     }
     
 ?>
@@ -46,7 +46,8 @@
 <div class="container">
     <div class="row">
         <div class="col text-center">
-            <h2>Productos</h2>
+            <h2>Registros</h2>
         </div>
     </div>
+    
 </div>

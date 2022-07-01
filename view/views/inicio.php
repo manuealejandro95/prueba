@@ -22,17 +22,17 @@
                         <input type="text" class="form-control" name="identificacion" id="identificacion">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputEmail4">Usuario</label>
-                        <input type="text" class="form-control" name="user" id="user" placeholder="Dígite su nombre de Usuario">
-                    </div>                 
+                        <label for="fechareg" id="fechan">Fecha de Registro</label>
+                        <input type="date" class="form-control" placeholder="dd/mm/aaaa" name="fechareg" id="fechareg">
+                    </div>            
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-4" id="nombres">
+                    <div class="form-group col-md-6" id="nombres">
                         <label for="inputEmail4">Nombres</label>
                         <input type="text" class="form-control" placeholder="Digitar solo nombres" name="nombre"
                             id="nombre">
                     </div>
-                    <div class="form-group col-md-4" id="apellido">
+                    <div class="form-group col-md-6" id="apellido">
                         <label for="inputPassword4">Apellidos</label>
                         <input type="text" class="form-control" placeholder="Digitar solo apellidos" name="apellidos"
                             id="apellidos">
@@ -75,3 +75,4 @@
     </div>
 </div>
 <script src="js/validacion.js?v=<?php echo(rand()); ?>"></script>
+<script src="js/action.js?v=<?php echo(rand()); ?>"></script>

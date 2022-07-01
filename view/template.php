@@ -25,13 +25,7 @@
     <?php
         $muestra = new MvcController();
         $muestra -> Enlacescontroller();
-    ?>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-    <script src="js/action.js?v=<?php echo(rand()); ?>"></script>
-    
-    
+    ?>  
 </body>
 
 </html>

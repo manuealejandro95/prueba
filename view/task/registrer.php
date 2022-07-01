@@ -19,7 +19,7 @@
     $data -> enviardata = array("id"=>$_POST["id"],
                                 "nombre"=>ucwords(strtolower($_POST["nombre"])),
                                 "apellido"=>ucwords(strtolower($_POST["apellido"])),
-                                "usuario"=>ucwords(strtolower($_POST["usuario"])),
+                                "fechareg"=>ucwords(strtolower($_POST["fechareg"])),
                                 "correo"=>$_POST["correo"],
                                 "tipoid"=>$_POST["tipoid"],
                                 "contrasena"=>$_POST["contrasena"]);

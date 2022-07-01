@@ -1,9 +1,10 @@
-<div class="container">
-    <div class="row">
-        <div class="col" id="rest">
-
-        </div>
-    </div>
+<?php
+    session_start();
+    if (isset($_SESSION['username'])){
+        header("location: /prueba/admin");
+    }    
+?>
+<div class="container">    
     <div class="row mt-4">
         <div class="col">
             <form method="POST" id="formulario">
@@ -14,8 +15,8 @@
                 </div>                    
                 <div class="form-row justify-content-center">
                     <div class="form-group col-md-4">
-                        <label for="inputState">Usuario</label>
-                        <input name="usua" placeholder="numero de documento" type="email" class="form-control" id="usua">
+                        <label for="inputState">Correo electrónico</label>
+                        <input name="usua" type="email" class="form-control" id="usua">
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
@@ -39,4 +40,5 @@
     </div>
 </div>
 <script src="js/iniciosesion.js?v=<?php echo(rand()); ?>"></script>
+
 
